@@ -1,0 +1,115 @@
+@font-face {
+    font-family: Zelda;
+    font-weight: bold;
+    src: url("./The\ Wild\ Breath\ of\ Zelda.otf") format("opentype");
+}
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Zelda;
+    text-decoration: none;
+    list-style: none;
+}
+body{
+    background: #536f50;
+}
+p{
+    align-items: center;
+    justify-content: center;
+    padding: auto;
+    margin-left: 7rem;
+}
+
+
+
+.bloc{
+    height: fit-content;
+    width: 1500px;
+    background-color: #000000;
+    margin: 0 auto;
+    margin-top: 1rem;
+    color: white;
+    font-size: xx-large;
+    padding: 10px;
+}
+@media screen and (max-width: 1499px) {
+    h1{
+        font-size: smaller;
+    }
+    .bloc{
+        width: 95%;
+        font-size: 1rem;
+    }
+}
+/*animation*/
+.anim{
+    width: fit-content;
+    height: fit-content;
+    align-items: center;
+    justify-content: center;
+	border-radius: 20px;
+    margin: 0 auto;
+    background: #92c582;
+    border-radius: 1rem;
+    padding-left:1rem ;
+    margin-top: 1%;
+    
+}
+
+.lettre{
+	color: 	 #0d7777;
+	font-size: 80px;
+	letter-spacing: 15px;
+	animation: flash 1.2s linear infinite;
+}
+
+@keyframes flash{
+	0%{
+		color: #00ffff;
+		text-shadow: 0 0 7px #199292;
+	}
+
+	90%{
+		color: #0d7777;
+		text-shadow: none;
+	}
+	100%{
+		color: #00ffff;
+		text-shadow: 0 0 7px #199292;
+	}
+}
+.lettre:nth-child(1){
+	animation-delay: 0.1s;
+}
+.lettre:nth-child(2){
+	animation-delay: 0.2s;
+}
+.lettre:nth-child(3){
+	animation-delay: 0.3s;
+}
+.lettre:nth-child(4){
+	animation-delay: 0.4s;
+}
+.lettre:nth-child(5){
+	animation-delay: 0.5s;
+}
+.lettre:nth-child(6){
+	animation-delay: 0.6s;
+}
+.lettre:nth-child(7){
+	animation-delay: 0.7s;
+}
+.lettre:nth-child(8){
+	animation-delay: 0.8s;
+}
+.lettre:nth-child(9){
+	animation-delay: 0.9s;
+}
+.lettre:nth-child(10){
+	animation-delay: 1s;
+}
+
+.fondu-out{
+	opacity: 0;
+	transition: opacity 0.4s ease-out;
+}
